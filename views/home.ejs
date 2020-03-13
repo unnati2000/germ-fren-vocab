@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordaforum</title>
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  
+
+</head>
+
+<body class="home">
+    <div class="nav text-right">
+        <nav>
+            <h3><span style="color: white;" class="mt-3 ml-3">Wordaforum</span><i class='fas fa-pen-alt ml-4 mt-4'
+                    style="color: white; font-size: 40px; "></i></h3>
+        </nav>
+    </div>
+
+    <div id="particles-js" class="text-center container-fluid"></div>
+
+    <div class="content">
+        <div class="row card-deck text-center">
+
+            <!--GERMAN-->
+            <div class="card col-md-6" style="width: 18rem;">
+                <h3>
+                    Lerne Deutsch
+                </h3>
+                <h5 class="mt-3 mb-3">Add Learned German Content</h5>
+                <br>
+                <i class='fas fa-lightbulb mt-4 mb-4' style='font-size:48px'></i>
+                <a href="/german"><button class="btn btn-outline-dark btn-lg btn-block">Search German
+                        Words</button></a>
+            </div>
+
+            <!--FRENCH-->
+            <div class="card col-md-6" style="width: 18rem;">
+                <h3>
+                    Apprends Le Français
+                </h3>
+                <br>
+                <h5 class="mt-3">Add French learned Content</h5>
+                <i class='fas fa-building mt-4 mb-4' style='font-size:48px'></i>
+                <a href="/french"><button class="btn btn-outline-dark btn-lg btn-block">Search French
+                        Words</button></a>
+
+            </div>
+
+        </div>
+
+        <div class="row card-deck text-center">
+
+            <!--VOCAB SECTION-->
+            <div class="card col-md-6" style="width: 18rem;">
+                <h3>
+                    English Vocabulary
+                </h3>
+                <i class='fas fa-book mt-4 mb-4' style='font-size:48px'></i>
+                <h5 class="mt-3 mb-3">Add New Vocabulary Word</h5>
+                <br>
+                <a href="/vocab"><button class="btn btn-outline-dark btn-lg btn-block">Search Vocab
+                        Words</button></a>
+            </div>
+
+            <div class="card col-md-6" style="width: 18rem;">
+                <h3>
+                    Checking Progress
+                </h3>
+                <i class='fas fa-clipboard-check mt-4 mb-4' style='font-size:48px'></i>
+                <h5 class="mt-3 mb-3">Daily Progress Check Up</h5>
+                <br>
+                <a href="/progress"><button class="btn btn-outline-dark btn-lg btn-block">Check Your Progress
+                        !</button></a>
+            </div>
+
+        </div>
+
+    </div>
+    <form method="GET" action="/add" id="mybutton">
+        <button class="feedback">+</button>
+    </form>
+
+    <footer>
+        <p>-Developed by Unnati Bamania  <i class="fa fa-code"></i></p>
+    </footer>
+
+
+
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/particles-app.js"></script>
+    <script type="text/javascript" src="text.js"></script>
+</body>
+
+</html>

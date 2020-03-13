@@ -1,0 +1,10 @@
+.adds   {
+    background: linear-gradient(90deg, #B993D6 0%, #8CA6DB 100%);
+    padding: 20px;;
+}
+.addin{
+    margin: 50px 50px;
+    background-color: black;
+    padding: 20px 30px;
+    color:white;
+}
