@@ -95,11 +95,12 @@ app.post('/german', (req, res, next) => {
             res.send(err);
         } else {
             if (foundWord) {
+                console.log(foundWord);
                 res.render("result.ejs", {word: foundWord});
             } else {
                 res.render("result.ejs", {word: {
                     title: "Oops !",
-                    eng_meaning: "Trying adding the word first !"
+                    meaning: "Trying adding the word first !"
                 }});
             }
         }
@@ -120,7 +121,7 @@ app.post('/french', (req, res, next) => {
             } else {
                 res.render("result.ejs", {word: {
                     title: "Oops !",
-                    eng_meaning: "Trying adding the word first !"
+                    meaning: "Trying adding the word first !"
                 }});
             }
         }
@@ -143,7 +144,7 @@ app.post('/vocab', (req, res, next) => {
             } else {
                 res.render("result.ejs", {word: {
                     title: "Oops !",
-                    eng_meaning: "Trying adding the word first !"
+                    meaning: "Trying adding the word first !"
                 }});
             }
         }
@@ -160,18 +161,21 @@ app.get('/add', (req,res,next) =>{
     res.render('add.ejs');
 });
 app.post('/add', (req,res,next) =>{
+    
     const op = (req.body.select);
     if(op==='German'){
         const german = new German({
             title: req.body.word,
-            eng_meaning: req.body.meaning
+            meaning: req.body.meaning
         })
+
+        //console.log(german);
         german.save();
     }
     else if(op=='French'){
         const french = new French({
             title: req.body.word,
-            eng_meaning: req.body.meaning
+            meaning: req.body.meaning
         })
         french.save();
     }
@@ -181,7 +185,7 @@ app.post('/add', (req,res,next) =>{
             meaning: req.body.meaning
         });
         vocab.save();
-        console.log('e');
+       
 
     }
 
