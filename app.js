@@ -39,13 +39,13 @@ var transporter = nodemailer.createTransport({
     }
 
   })
-  console.log('hhh');
+  
 }
 
 //*********************************************** MONGOOSE ************************************************************/
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/languageDB', {useNewUrlParser:true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://unnati:unnati@dictionarydb-r33h9.mongodb.net/dictionaryDB', {useNewUrlParser:true, useUnifiedTopology: true});
 
 
 //********************************************* FRENCH DBMS ************************************************************0/
@@ -216,4 +216,9 @@ app.get("/progress", function (req, res) {
 
 });
 
-app.listen(3000 || process.env.PORT);
+var port = process.env.PORT;
+if (port === undefined) {
+    port = 3000;
+}
+
+app.listen(port);
